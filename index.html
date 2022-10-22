@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sabujcha</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/eadf536e4d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Work+Sans:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,8 +21,14 @@
                 <a href="#">PAGES</a>
                 <a href="#">CONTACT</a>
             </nav>
+            <div class="logo">
             <img src="/Imagenes/logo.png" alt="logo">
-            <a href="#">USD</a>
+            </div>
+            <div class="iconos">
+                <a href="#">USD</a>
+                <i class="fal fa-shopping-cart"></i>
+            </div>
+            
         </div>
     </header>
     <!-- ==========================BANNER============================= -->
@@ -29,27 +40,28 @@
     <section id="descuentos">
         <div class="descuento-1">
             <p class="descuento">-50% Sale</p>
-            <P>SUMMER VACATION</P>
+            <P class="descripcion-product">SUMMER VACATION</P>
         </div>
         <div class="descuento-2">
             <p class="descuento">-20% Sale</p>
-            <P>WINTER VACATION</P>
+            <P class="descripcion-product">WINTER VACATION</P>
         </div>
     </section>
     <!-- ========================LATEST PRODUCTS======================= -->
     <section id="recientes">
-        <h2>Latest Products</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam sapiente illum magni in vel qui, iste fugiat eligendi voluptatem optio facere similique ut officia repellendus error impedit quia? Magni, unde!</p>
+        <div class="textos">
+            <h2>Latest Products</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam sapiente illum magni in vel qui, </p>
+        </div>
         <div class="contenedor-recientes">
             <div class="productos">
-                <div class="producto-img-1">
-                    <img src="#" alt="">
+                <div class="productos-img-1">
                         <div class="descuento">
                             <p>-20%</p>
                         </div>
-                    <p class="titulo-producto">Nature Close Tea</p>
-                    <p>$100.00 - <del class="opacidad">$120.00</del></p>
                 </div>
+                <p class="titulo-producto"> <span class="opacidad-titulo">Close Tea</span> </p>
+                <p class="titulo-producto">$100.00 - <del class="opacidad-titulo">$120.00</del></p>
             </div>
             <div class="productos">
                 <div class="producto-img-2">
@@ -79,25 +91,28 @@
     </section>
     <!-- ================================HOJA========================== -->
     <section id="planta">
-        <img src="#" alt="">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt! Quibusdam distinctio, reprehenderit quia quos sapiente quasi unde fugiat dicta maiores molestias ab facilis! Placeat voluptas cumque dolor autem eum!</p>
-        <p class="modificacion">GREGORY PERKINS</p>
-        <p class="modificacion-1">Customer</p>
+        <div class="img"></div>
+        <div class="textos">
+            <p><i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt! Quibusdam distinctio, reprehenderit quia quos sapiente</i></p>
+            <p class="modificacion"><strong>GREGORY PERKINS</strong></p>
+            <p class="modificacion-1"><span class="opacidad-titulo">Customer</span></p>
+        </div>
     </section>
     <!-- ===============================NEW PRODUCTS=================== -->
     <section id="nuevos">
-        <h2>New Products</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptatem. Voluptates quo omnis nam minus quos, odio culpa! Rerum placeat vero a, eveniet facilis id hic. Esse, modi. Suscipit, ad!</p>
+        <div class="textos">
+            <h2>New Products</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptatem. Voluptates quo omnis nam minus quos</p>
+        </div>
         <div class="contenedor-nuevos">
             <div class="productos">
                 <div class="producto-1">
-                    <img src="#" alt="">
                         <div class="descuento">
                             <p>-30%</p>
-                        </div>
-                    <p class="titulo-producto">BeBE Bloom tea</p>
-                    <p>$100.00 - <del class="opacidad">$120.00</del></p>
+                    </div>
                 </div>
+                <p class="titulo-producto"><span class="opacidad-titulo">BeBE Bloom tea</p>
+                <p class="titulo-producto">$100.00 - <del class="opacidad-titulo">$120.00</del></p>
             </div>
             <div class="productos">
                 <div class="producto-2">
@@ -128,13 +143,12 @@
             </div>
             <div class="productos">
                 <div class="producto-5">
-                    <img src="#" alt="">
-                        <div class="descuento">
-                            <p>-50%</p>
-                        </div>
-                    <p class="titulo-producto">Every spice Tea</p>
-                    <p>$100.00 - <del class="opacidad">$120.00</del></p>
+                    <div class="descuento">
+                        <p>-50%</p>
+                    </div>
                 </div>
+                <p class="titulo-producto"><span class="opacidad-titulo">Every spice Tea</span></p>
+                <p class="titulo-producto">$100.00 - <del class="opacidad-titulo">$120.00</del></p>
             </div>
             <div class="productos">
                 <div class="producto-6">
@@ -146,7 +160,7 @@
             <div class="productos">
                 <div class="producto-7">
                     <img src="#" alt="">
-                        <div class="descuento">-40%</div>
+                        <div class="descuento"><p>-40%</p></div>
                     <p class="titulo-producto">Green Tea Tulsi</p>
                     <p>$100.00 - <del class="opacidad">$120.00</del></p>
                 </div>
@@ -163,44 +177,61 @@
     <!-- ======================SUBSCRIBE=============================== -->
     <section id="suscripcion">
         <h2>Join to our Newsletter</h2>
-        <div class="email">Your Email Address</div>
-        <button>SUBSCRIBE</button>
+        <div class="email">
+            <div class="enter-email">
+                <p>Your Email Addres</p>
+            </div>
+            <button>SUBSCRIBE</button>
+        </div>
     </section>
     <!-- =========================LATEST NEWS========================== -->
-    <section id="ultimo">
+    <section id="ultimo"> 
         <h2 class="titulo-sub">Latest News</h2>
         <div class="contenedor-ultimo">
             <div class="productos">
-                <img src="#" alt="">
-                <a href="#"><i>14 Sep</i></a>
-                <p>Lorem ipsum dolor sit</p>
-                <p class="opacidad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reiciendis soluta </p>
-                <a href="#" class="black"> READ MORE</a>
+                <div class="textos"></div>
+                <div class="redireccion">
+                    <a href="#"><i>14 Sep</i></a>
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p class="opacidad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reiciendis soluta </p>
+                    <div class="redireccion-n">
+                        <a href="#"> READ MORE</a>
+                    </div>
+                </div>
             </div>
             <div class="productos">
-                <img src="#" alt="">
-                <a href="#"><i>20 Dec</i></a>
-                <p>Lorem ipsum dolor sit</p>
-                <p class="opacidad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reiciendis soluta </p>
-                <a href="#" class="black"> READ MORE</a>
+                <div class="textos"></div>
+                <div class="redireccion">
+                    <a href="#"><i>20 Dec</i></a>
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p class="opacidad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reiciendis soluta </p>
+                    <div class="redireccion-n">
+                        <a href="#"> READ MORE</a>
+                    </div>
+                </div>
             </div>
             <div class="productos">
-                <img src="#" alt="">
-                <a href="#"><i>18 Aug</i></a>
-                <p>Lorem ipsum dolor sit</p>
-                <p class="opacidad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reiciendis soluta </p>
-                <a href="#" class="black"> READ MORE</a>
+                <div class="img"></div>
+                <div class="textos"></div>
+                <div class="redireccion">
+                    <a href="#"><i>18 Aug</i></a>
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p class="opacidad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reiciendis soluta </p>
+                    <div class="redireccion-n">
+                        <a href="#"> READ MORE</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- ===========================MARCAS============================= -->
     <section id="marcas">
         <div class="marca">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
-            <img src="#" alt="">
+            <div class="marca-1"></div>
+            <div class="marca-2"></div>
+            <div class="marca-3"></div>
+            <div class="marca-4"></div>
+            <div class="marca-5"></div>
         </div>
     </section>
     <!-- ============================FOOTER============================ -->
@@ -224,8 +255,10 @@
             </div>
         </div>
         <div class="metodo-pago">
-            <p>© 2021 <strong>SabujCha</strong> made with By <strong>HasThemes.</strong></p>
-            <img src="#" alt="">
+            <div class="textos">
+                <p>&copy; 2021 <strong>SabujCha</strong> made with 💓 By <strong>HasThemes.</strong></p>
+            </div>
+            <div class="img"></div>
         </div>
     </footer>
 </body>

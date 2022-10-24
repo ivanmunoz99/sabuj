@@ -326,6 +326,10 @@ header a{
     font-weight: bold;
 }
 #ultimo .redireccion a{
+    color: #000000;
+    font-size: 1em;
+}
+#ultimo .redireccion a:hover{
     color: #529F0F;
     font-size: 1em;
 }
@@ -421,6 +425,9 @@ footer .metodo-pago .img{
         font-family: 'Work Sans', sans-serif;
         font-weight: bold;
         padding-left: -10%;
+    }
+    nav a:hover{
+        color: #529F0F;
     }
     /*==========================DESCUENTOS=================================*/
     #descuentos {

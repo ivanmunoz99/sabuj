@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+}
+p{
+    font-family: 'Lora', serif;
+}
+button{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 2px;
+    border: none;
+}
+.opacidad-titulo{
+    color: grey;
+}
+.color-v{
+    color: #529F0F;
+}
+/*=====================================HEADER=============================*/
+.logo{
+    background-image: url(/Imagenes/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 15vh;
+}
+.contenedor-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: none;
+}
+.iconos{
+    padding-right: 7%;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+/*==============================BANNER===================================*/
+#banner-3{
+    background-image: url(/Imagenes/banner-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    margin: 10px;
+}
+/*====================================DESCRIPCION=========================*/
+#producto-descripcion .img-g{
+    background-image: url(/Imagenes/product-detalis-l1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    margin: 10px;
+    border: 1px solid rgba(206, 206, 206, 0.459);
+}
+#producto-descripcion .descuento{
+    width: 70PX;
+    height: 70PX;
+    background-color: #529F0F;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding-top: 3%;
+}
+#producto-descripcion .img-p{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+#producto-descripcion .img-p .img-p-1{
+    background-image: url(/Imagenes/product-detalis-s1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20vw;
+    height: 20vh;
+    border: 1px solid rgba(206, 206, 206, 0.459);
+}
+#producto-descripcion .img-p .img-p-2{
+    background-image: url(/Imagenes/product-detalis-s2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20vw;
+    height: 20vh;
+    border: 1px solid rgba(206, 206, 206, 0.459);
+}
+#producto-descripcion .img-p .img-p-3{
+    background-image: url(/Imagenes/product-detalis-s3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20vw;
+    height: 20vh;
+    display: none;
+}
+#producto-descripcion .img-p .img-p-4{
+    background-image: url(/Imagenes/product-detalis-s4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20vw;
+    height: 20vh;
+    display: none;
+}
+#producto-descripcion .descripcion .text{
+    display: flex;
+    padding-top: 5%;
+}
+#producto-descripcion .descripcion .mod{
+    text-indent: 2em;
+    padding-bottom: 2%;
+}
+#producto-descripcion .descripcion h2{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    padding-bottom: 3%;
+}
+#producto-descripcion .descripcion p{
+    margin: 0;
+    line-height: 170%;
+}
+#producto-descripcion .descripcion ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 5%;
+    line-height: 170%;
+}
+#producto-descripcion .descripcion hr{
+    margin-top: 7%;
+}
+#producto-descripcion .descripcion .botones{
+    margin-top: 5%;
+    padding-left: 1%;
+}
+#producto-descripcion .descripcion .botones .T{
+    background-color: #4ca7ea;
+}
+#producto-descripcion .descripcion .botones .F{
+    background-color: #495e9a;
+    margin-left: 2%;
+}
+#producto-descripcion .descripcion .botones .G{
+    background-color: #cf563f;
+    margin-left: 2%;
+}
+#producto-descripcion .descripcion .botones .P{
+    background-color: #bd342c;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+
+}
+/*================================DESCRIPCIONES==========================*/
+#descripcion-product .secciones{
+    display: flex;
+    justify-content: center;
+    text-indent: 1em;
+}
+#descripcion-product{
+    margin: 10px;
+}
+#descripcion-product hr{
+    border-color: rgba(206, 206, 206, 0.082);
+}
+/*====================================RELACIONADOS========================*/
+#relacionados h2{
+    text-align: center;
+}
+#relacionados{
+    margin-top: 10%;
+}
+#relacionados .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+#relacionados .img-1{
+    background-image: url(/Imagenes/product-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95vw;
+    height: 60vh;
+    border: 1px solid rgba(206, 206, 206, 0.459);
+}
+#relacionados .img:first-child{
+    margin: auto;
+}
+#relacionados .descuento{
+    width: 70PX;
+    height: 70PX;
+    background-color: #529F0F;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding-top: 3%;
+}
+#relacionados .img-2{
+    background-image: url(/Imagenes/product-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20vw;
+    height: 20vh;
+}
+#relacionados .img-3{
+    background-image: url(/Imagenes/product-3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20vw;
+    height: 20vh;
+}
+#relacionados .img-4{
+    background-image: url(/Imagenes/product-4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20vw;
+    height: 20vh;
+}
+#relacionados .img:nth-child(2){
+    display: none;
+}
+#relacionados .img:nth-child(3){
+    display: none;
+}
+#relacionados .img:nth-child(4){
+    display: none;
+}
+#relacionados .contenedor p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+/*=======================FOOTER==========================================*/
+footer{
+    background-color: #f8f8f8;
+    margin: 10px;
+    margin-bottom: 0;
+}
+footer .footer{
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: medium;
+}
+.footer .info1{
+    line-height: 250%;
+}
+.footer .info2{
+    line-height: 250%;
+}
+.footer .info3{
+    line-height: 250%;
+}
+.footer .info4{
+    line-height: 170%;
+}
+.metodo-pago{
+    height: 20vh;
+    background-color: #ebebeb;
+    padding: 0%;
+}
+footer .textos{
+    padding-top: 1%;
+    font-size: x-large;
+    text-align: center;
+}
+footer .metodo-pago .img{
+    background-image: url(/Imagenes/payment.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:contain;
+    width: 90%;
+    height: 30%;
+    margin: auto;
+}
+/*=================================DESKTOP================================*/

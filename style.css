@@ -71,8 +71,8 @@ header a{
 /*===========================DESCUENTOS====================================*/
 #descuentos .descuento-1{
     background-image: linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
     ) 
     ,url(/Imagenes/banner-1.png);
     background-size: cover;
@@ -95,8 +95,8 @@ header a{
 
 #descuentos .descuento-2{
     background-image: linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
     ),
     url(/Imagenes/banner-2.png);
     background-size: cover;

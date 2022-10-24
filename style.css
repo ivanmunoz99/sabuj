@@ -24,7 +24,7 @@ button{
 /*==================================================================*/
 button:hover{
     color: #529F0F;
-    background-color: #0e0e0e;
+    background-color: #1a1a1a;
 }
 .contenedor_header{
     display: flex;

@@ -57,6 +57,7 @@ header a{
     background-image: url(/Imagenes/banner-3.png);
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 40vh;
     margin: 10px;
 }
@@ -160,20 +161,31 @@ header a{
 #producto-descripcion .descripcion .botones .T{
     background-color: #4ca7ea;
 }
+#producto-descripcion .descripcion .botones .T:hover{
+    background-color: #3a84b9;
+}
 #producto-descripcion .descripcion .botones .F{
     background-color: #495e9a;
     margin-left: 2%;
 }
+#producto-descripcion .descripcion .botones .F:hover{
+    background-color: #374877;
+}
 #producto-descripcion .descripcion .botones .G{
     background-color: #cf563f;
     margin-left: 2%;
+}
+#producto-descripcion .descripcion .botones .G:hover{
+    background-color: #923d2c;
 }
 #producto-descripcion .descripcion .botones .P{
     background-color: #bd342c;
     display: flex;
     flex-direction: column;
     margin-top: 3%;
-
+}
+#producto-descripcion .descripcion .botones .P:hover{
+    background-color: #86241f;
 }
 /*================================DESCRIPCIONES==========================*/
 #descripcion-product .secciones{
@@ -228,24 +240,27 @@ header a{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 20vw;
-    height: 20vh;
+    width: 15vw;
+    height: 25vh;
+    border: 1px solid rgba(206, 206, 206, 0.459);
 }
 #relacionados .img-3{
     background-image: url(/Imagenes/product-3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 20vw;
-    height: 20vh;
+    width: 15vw;
+    height: 25vh;
+    border: 1px solid rgba(206, 206, 206, 0.459);
 }
 #relacionados .img-4{
     background-image: url(/Imagenes/product-4.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 20vw;
-    height: 20vh;
+    width: 15vw;
+    height: 25vh;
+    border: 1px solid rgba(206, 206, 206, 0.459);
 }
 #relacionados .img:nth-child(2){
     display: none;
@@ -303,3 +318,147 @@ footer .metodo-pago .img{
     margin: auto;
 }
 /*=================================DESKTOP================================*/
+@media (min-width: 720px){
+    nav {
+        display: flex;
+        margin-left: auto;
+        text-indent: 2em;
+    }
+    nav a:hover{
+        color: #529F0F;
+    }
+    .contenedor-header:nth-child(2){
+        display: flex;
+    }
+    .iconos{
+        text-indent: 1em;
+    }
+    #banner-3{
+        width: 100vw;
+    }
+    /*================================DESCRIPCION PRODUCTO=?==============*/
+    #producto-descripcion{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 10%;
+    }
+    #producto-descripcion .img-g{
+        height: 60vh;
+    }
+    #producto-descripcion .img-p .img-p-1{
+        width: 10vw;
+        height: 10vh;
+    }
+    #producto-descripcion .img-p .img-p-2{
+        width: 10vw;
+        height: 10vh;
+    }
+    #producto-descripcion .img-p .img-p-3{
+        display: flex;
+        border: 1px solid rgba(206, 206, 206, 0.459);
+        width: 10vw;
+        height: 10vh;
+    }
+    #producto-descripcion .img-p .img-p-4{
+        display: flex;
+        border: 1px solid rgba(206, 206, 206, 0.459);
+        width: 10vw;
+        height: 10vh;
+    }
+    #producto-descripcion .img-p{
+        padding-left: 0%;
+        padding-right: 0%;
+        justify-content: space-between;
+    }
+    #producto-descripcion .imagenes{
+        margin-left: 15%;
+    }
+    #producto-descripcion .descripcion{
+        margin-right: 15%;
+    }
+    #producto-descripcion .descuento{
+        width: 40PX;
+        height: 40PX;
+        font-size: 1em;
+        padding-top: 0.5%;
+    }
+    /*====================================================================*/
+    #descripcion-product{
+        margin: 10%;
+        line-height: 180%;
+    }
+    /*=============================RELACIONADOS==========================*/
+    #relacionados .img-1{
+        width: 15vw;
+        height: 25vh;
+    }
+    #relacionados .img:nth-child(2){
+        display: block;
+    }
+    #relacionados .img:nth-child(3){
+        display: block;
+    }
+    #relacionados .img:nth-child(4){
+        display: block;
+    }
+    #relacionados .img:first-child{
+        margin: 0;
+    }
+    #relacionados .contenedor{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #relacionados .descuento{
+        width: 40PX;
+        height: 40PX;
+        font-size: 1em;
+        padding-top: 0.5%;
+        margin-left: 1%;
+        margin-top: 1%;
+    }
+    /*=========================================FOOTER====================*/
+    footer .footer{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 7%;
+    }
+    footer .metodo-pago{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .metodo-pago .img{
+        width: 50%;
+        height: 30%;
+        margin: 0;
+    }
+    .metodo-pago{
+        height: 10vh;
+    }
+    footer .textos{
+        font-size: small;
+        padding-left: 10%;
+    }
+    /*=================================BOTONES========================*/
+    #producto-descripcion .descripcion .botones .T{
+        width: 10vw;
+    }
+    #producto-descripcion .descripcion .botones .F{
+        width: 8vw;
+    }
+    #producto-descripcion .descripcion .botones .G{
+        width: 10vw;
+    }
+    #producto-descripcion .descripcion .botones .P{
+        width: 10vw;
+        margin-top: 0;
+        margin-left: 2%;
+        padding-top: 1.5%;
+        padding-left: 5%;
+    }
+    #producto-descripcion .descripcion .botones{
+        display: flex;
+    }
+}

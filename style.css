@@ -758,6 +758,7 @@ footer .metodo-pago .img{
         height: 10vh;
     }
     /*===========================FOOTER===================================*/
+    
     footer .footer{
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;

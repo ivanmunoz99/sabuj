@@ -47,7 +47,7 @@ header a{
     text-decoration: none;
     color: black;
 }
-/*====================================================================*/
+/*==============================BANNER====================================*/
 #banner{
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@ header a{
     font-family: 'Work Sans', sans-serif;
     font-weight: bolder;
 }
-/*======================================================================*/
+/*===========================DESCUENTOS====================================*/
 #descuentos .descuento-1{
     background-image: linear-gradient(
         rgba(0,0,0,0.5),
@@ -116,7 +116,7 @@ header a{
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
 }
-/*======================================================================*/
+/*==========================LATEST PRDUCTS=================================*/
 .opacidad-titulo{
     color: grey;
 }
@@ -148,15 +148,18 @@ header a{
     text-align: center;
     margin-top: 10%;
     padding-top: 4%;
+    padding-bottom: 2%;
 }
 
 .productos-img-1 .descuento{
-    width: 7%;
-    height: 6%;
+    width: 70PX;
+    height: 70PX;
     background-color: #529F0F;
     border-radius: 50%;
     color: white;
     position: absolute;
+    text-align: center;
+    font-size: 1.3em;
     margin-left: 2%;
     margin-top: 2%;
 }
@@ -168,7 +171,7 @@ header a{
 #planta .img{
     background-image: url(/Imagenes/testi.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     margin: auto;
     width: 15vw;
@@ -194,10 +197,10 @@ header a{
 }
 /*===================================Newproducts===============================*/
 #nuevos{
-    width: 100vw;
-    height: 162vh;
+    height: 168vh;
     background-color: #f3f3f3;
     margin: 10px;
+    margin-top: 10%;
 }
 #nuevos .textos{
     text-align: center;
@@ -214,16 +217,16 @@ header a{
     margin-top: 10%;
 }
 .producto-1 .descuento{
-    width: 15%;
-    height: 10%;
+    width: 70px;
+    height: 70PX;
     background-color: #529F0F;
     border-radius: 50%;
     position: absolute;
     margin-left: 3%;
     margin-top: 3%;
     color: white;
-    font-size: 2em;
-    padding-left: 1%;
+    font-size: 1.3em;
+    text-align: center;
 }
 #nuevos .productos:nth-child(5) .producto-5{
     background-image: url(/Imagenes/product-2.jpg);
@@ -231,21 +234,21 @@ header a{
     background-repeat: no-repeat;
     background-size: cover;
     width: 90vw;
-    height: 60vh;
+    height: 55vh;
     margin: auto;
     margin-top: 10%;
 }
 .producto-5 .descuento{
-    width: 15%;
-    height: 10%;
+    width: 70px;
+    height: 70PX;
     background-color: #529F0F;
     border-radius: 50%;
     position: absolute;
     margin-left: 3%;
     margin-top: 3%;
     color: white;
-    font-size: 2em;
-    padding-left: 1%;
+    font-size: 1.3em;
+    text-align: center;
 }
 #nuevos .productos:nth-child(2){
     display: none;
@@ -271,17 +274,22 @@ header a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    width: 100vw;
-    height: 20vh;
+    height: 25vh;
     text-align: center;
     padding-top: 5%;
     margin: 10px;
-    
 }
 #suscripcion .enter-email{
     width: 40vw;
     height: 5vh;
     border: 1px solid black;
+}
+#suscripcion .enter-email p{
+    margin: 2%;
+    color: #575757;
+    font-size: small;
+    text-align: left;
+    padding-left: 3%;
 }
 .email{
     display: flex;
@@ -291,8 +299,7 @@ header a{
 /*===================================latestNews==========================*/
 #ultimo{
     background-image: url(/Imagenes/bg-1.jpg);
-    width: 100vw;
-    height: 230vh;
+    height: 245vh;
     margin: 10px;
 }
 #ultimo h2.titulo-sub{
@@ -312,7 +319,6 @@ header a{
 }
 #ultimo .productos {
     padding-top: 5%;
-    font-size: large;
 }
 #ultimo .redireccion .redireccion-n a{
     color: black;
@@ -321,7 +327,7 @@ header a{
 }
 #ultimo .redireccion a{
     color: #529F0F;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 #ultimo .productos:nth-child(2) .textos{
     background-image: url(/Imagenes/blog-single-2.jpg);
@@ -343,47 +349,48 @@ header a{
 }
 #ultimo .redireccion{
     margin-left: 5%;
+    padding-top: 5%;
 }
 /*===========================MARCAS=====================================*/
-#marcas {
+#marcas .marca{
     display: flex;
     justify-content: center;
     margin-top: 10%;
     margin-bottom: 10%;
 }
-#marcas .marca:first-child{
+#marcas .marca-1{
     background-image: url(/Imagenes/1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 40vw;
-    height: 15vh;
-}
-#marcas .marca:nth-child(2){
-    display: none;
-}
-#marcas .marca:nth-child(3){
-    display: none;
-}
-#marcas .marca:nth-child(4){
-    display: none;
-}
-#marcas .marca:nth-child(5){
-    display: none;
+    width:40vw;
+    height: 20vh;
 }
 /*===========================FOOTER=====================================*/
 footer{
     background-color: #f8f8f8;
     margin: 10px;
+    margin-bottom: 0;
 }
 footer .footer{
     padding-left: 5%;
     padding-top: 5%;
-    font-size: x-large;
+    font-size: medium;
+}
+.footer .info1{
+    line-height: 250%;
+}
+.footer .info2{
+    line-height: 250%;
+}
+.footer .info3{
+    line-height: 250%;
+}
+.footer .info4{
+    line-height: 170%;
 }
 .metodo-pago{
-    width: 100vw;
-    height: 15vh;
+    height: 20vh;
     background-color: #ebebeb;
     padding: 0%;
 }
@@ -400,4 +407,377 @@ footer .metodo-pago .img{
     width: 90%;
     height: 30%;
     margin: auto;
+}
+/*=================================DESKTOP==============================*/
+@media (min-width: 720px){
+    .contenedor_header{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        text-indent: 2em;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bold;
+        padding-left: -10%;
+    }
+    /*==========================DESCUENTOS=================================*/
+    #descuentos {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    #descuentos .descuento-1{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 35vw;
+        height: 30vh;
+    }
+    #descuentos .descuento-2{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 35vw;
+        height: 30vh;
+    }
+    .descuento-1{
+        padding-left: 3%;
+        padding-top: 1%;
+    }
+    .descuento-2{
+        padding-left: 3%;
+        padding-top: 1%;
+    }
+    /*==============================LATEST PRODUCTS========================*/
+    #recientes{
+        height: 75vh;
+    }
+    #recientes .contenedor-recientes{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #recientes .textos{
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    #recientes .productos:first-child .productos-img-1{
+        width: 20vw;
+        height: 30vh;
+    }
+    .productos-img-1 .descuento{
+        width: 40PX;
+        height: 40PX;
+        font-size: 12px;
+    }
+    #recientes .productos:nth-child(2){
+        display: block;
+    }
+    #recientes .productos:nth-child(3){
+        display: block;
+    }
+    #recientes .productos:nth-child(4){
+        display: block;
+    }
+    #recientes .productos:nth-child(2) .producto-img-2{
+        background-image: url(/Imagenes/product-2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20vw;
+        height: 30vh;
+    }
+    #recientes .productos:nth-child(3) .producto-img-3{
+        background-image: url(/Imagenes/product-3.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20vw;
+        height: 30vh;
+    }
+    .producto-img-3 .descuento{
+        width: 40PX;
+        height: 40PX;
+        background-color: #529F0F;
+        border-radius: 50%;
+        color: white;
+        position: absolute;
+        text-align: center;
+        font-size: 12px;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    #recientes .productos:nth-child(4) .producto-img-4{
+        background-image: url(/Imagenes/product-4.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20vw;
+        height: 30vh;
+    }
+    /*=============================NEW PRODUCTS============================*/
+    #nuevos{
+        height: 120vh;
+        margin-bottom: 0%;
+    }
+    #nuevos .contenedor-nuevos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #nuevos .productos:first-child .producto-1{
+        width: 20vw;
+        height: 30vh;
+        margin-top: 0;
+    }
+    #nuevos .productos:nth-child(2){
+        display: block;
+    }
+    #nuevos .productos:nth-child(3){
+        display: block;
+    }
+    #nuevos .productos:nth-child(4){
+        display: block;
+    }
+    #nuevos .productos:nth-child(6){
+        display: block;
+    }
+    #nuevos .productos:nth-child(7){
+        display: block;
+    }
+    #nuevos .productos:nth-child(8){
+        display: block;
+    }
+    #nuevos .productos:nth-child(2) .producto-2{
+        background-image: url(/Imagenes/product-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 20vw;
+        height: 30vh;
+    }
+    #nuevos .productos:nth-child(3) .producto-3{
+        background-image: url(/Imagenes/product-5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 20vw;
+        height: 30vh;
+    }#nuevos .productos:nth-child(4) .producto-4{
+        background-image: url(/Imagenes/product-7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 20vw;
+        height: 30vh;
+    }
+    #nuevos .productos:nth-child(5) .producto-5{
+        width: 20vw;
+        height: 30vh;
+        margin-top: 0;
+    }
+    #nuevos .productos:nth-child(6) .producto-6{
+        background-image: url(/Imagenes/product-4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 20vw;
+        height: 30vh;
+    }
+    #nuevos .productos:nth-child(7) .producto-7{
+        background-image: url(/Imagenes/product-6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 20vw;
+        height: 30vh;
+    }
+    #nuevos .productos:nth-child(8) .producto-8{
+        background-image: url(/Imagenes/product-8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 20vw;
+        height: 30vh;
+    }
+    .producto-1 .descuento{
+        width: 40PX;
+        height: 40PX;
+        font-size: 12px;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    .producto-2 .descuento{
+        width: 40PX;
+        height: 40PX;
+        background-color: #529F0F;
+        border-radius: 50%;
+        color: white;
+        position: absolute;
+        text-align: center;
+        font-size: 12px;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    .producto-4 .descuento{
+        width: 40PX;
+        height: 40PX;
+        background-color: #529F0F;
+        border-radius: 50%;
+        color: white;
+        position: absolute;
+        text-align: center;
+        font-size: 12px;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    .producto-5 .descuento{
+        width: 40PX;
+        height: 40PX;
+        font-size: 12px;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    .producto-7 .descuento{
+        width: 40PX;
+        height: 40PX;
+        background-color: #529F0F;
+        border-radius: 50%;
+        color: white;
+        position: absolute;
+        text-align: center;
+        font-size: 12px;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    #nuevos .textos{
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-bottom: 3%;
+    }
+    /*===============================SUSCRIPCION==========================*/
+    #suscripcion{
+        height: 40vh;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #suscripcion .enter-email{
+        width: 30vw;
+        height: 7vh;
+    }
+    button{
+        width: 15vw;
+        height: 7vh;
+    }
+    #suscripcion .enter-email p{
+        margin: 5%;
+    }
+    /*===========================LATEST NEWS==============================*/
+    #ultimo{
+        margin-top: 0;
+        height: 100vh;
+    }
+    .titulo-sub{
+        margin-top: 0;
+    }
+    .contenedor-ultimo{
+        display: flex;
+        justify-content: center;
+        margin: 7%;
+        margin-top: 0;
+    }
+    #ultimo .productos:first-child .textos{
+        width: 25vw;
+        height: 35vh;
+    }
+    #ultimo .productos:nth-child(2) .textos{
+        width: 25vw;
+        height: 35vh;
+    }
+    #ultimo .productos:nth-child(3) .textos{
+        width: 25vw;
+        height: 35vh;
+    }
+    #ultimo .productos{
+        width: 30vw;
+    }
+    /*=================================MARCAS==============================*/
+    
+    #marcas .marca{
+        justify-content: space-around;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #marcas .marca-1{
+        width: 15vw;
+        height: 10vh;
+    }
+    #marcas .marca-2{
+        background-image: url(/Imagenes/2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15vw;
+        height: 10vh;
+    }
+    #marcas .marca-3{
+        background-image: url(/Imagenes/3.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15vw;
+        height: 10vh;
+    }
+    #marcas .marca-4{
+        background-image: url(/Imagenes/4.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15vw;
+        height: 10vh;
+    }
+    #marcas .marca-5{
+        background-image: url(/Imagenes/5.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15vw;
+        height: 10vh;
+    }
+    /*===========================FOOTER===================================*/
+    footer .footer{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 7%;
+    }
+    footer .metodo-pago{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .metodo-pago .img{
+        width: 50%;
+        height: 30%;
+        margin: 0;
+    }
+    .metodo-pago{
+        height: 10vh;
+    }
+    footer .textos{
+        font-size: small;
+        padding-left: 10%;
+    }
+}
+
+@media (min-width: 990px){
+    .contenedor_header .logo{
+        margin-left: -30%;
+    }
 }
